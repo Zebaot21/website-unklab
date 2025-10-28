@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Workshop HTML</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Workshop HTML (UJIAN PRAKTEK WEB DESIGN)</h1>
+    <h3><b>Workshop ini ditunjukan untuk memperkenalkan dasar-dasar HTML hingga pembuatan form. Silahkan isi formulir dibawah ini untuk mendaftar sebagai peserta.</b></h3>
+
+    <a href="tentang.html">Tentang /</a>
+    <a href="kontak.html">Kontak</a> 
+    <form>
+        <fieldset>
+            <legend>Data Diri</legend>
+
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" /><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br /><br />
+
+            <label for="usia">Usia:</label>
+            <input type="usia" id="usia" name="usia" /><br /><br />
+
+           <label for="nomor HP">Nomor HP:</label>
+            <input type="nomor HP" id="nomor HP" name="nomor HP" /><br /><br />
+
+        <fieldset>
+            <legend>Pilihan Workshop</legend>
+
+            Jenis Workshop:
+              <input type="radio" name="JW" value="Frontend" />Frontend
+            <input type="radio" name="JW" value="Backend" />Backend 
+            <input type="radio" name="JW" value="Backend" />Fullstack<br /><br />
+
+Hari Keikutsertaan:
+             <input type="checkbox" name="Hari Keikutsertaan" value="Hari 1" />Hari 1
+            <input type="checkbox" name="Hari Keikutsertaan" value="Hari 2" />Hari 2
+            <input type="checkbox" name="Hari Keikutsertaan" value="Hari 3" />Hari 3 <br /><br />
+
+  <label for="Lokasi">Pilih Kota Lokasi:</label>
+            <select id="Lokasi" name="Lokasi">
+                <optgroup label="Jawa">
+                    <option value="jk">Jakarta</option>
+                    <option value="bd">Bandung</option>
+                    <option value="sb">Surabaya</option>
+                </optgroup>
+                <optgroup label="Luar Jawa">
+                    <option value="md">Medan</option>
+                    <option value="mk">Makassar</option>
+                    <option value="bp">Balikpapan</option>
+                </optgroup>
+            </select><br><br>
+
+             <label for="Alasan">Alasan Mengikuti Workshop:</label><br>
+            <textarea name="Alasan" rows="4" cols="30"></textarea><br/><br>
+
+            <label for="Kuota">Kuota Terisi:</label>
+            <progress id="Kuota" value="50" max="100">60</progress><br><br>
+
+            <p>Tingkat Penguasaan HTML:</p>
+            <meter value="7" min="0" max="10">7</meter><br><br>
+
+              <form oninput="total.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="number" id="a" value="10"> +
+                <input type="number" id="b" value="20"> =
+                <output name="total" for="a b"></output> <br>
+            </form><br>
+
+              <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
